@@ -1,15 +1,5 @@
-# Browser Navigation Using Stack
+This project demonstrates the implementation of browser back and forward navigation using the Stack data structure. It simulates how modern web browsers manage navigation history by storing visited pages in a structured and sequential manner. The project focuses on explaining the practical application of the Last In First Out (LIFO) principle through a simple and interactive visualization.
 
-This project demonstrates browser back and forward navigation using the Stack data structure.
+The navigation system maintains a current page along with separate histories for backward and forward navigation. Each user action updates the navigation history using stack operations, ensuring accurate and predictable movement between pages. The project avoids unnecessary complexity and concentrates on strengthening core data structure concepts.
 
-## Tech Stack
-- Java (DSA stack implementation)
-- HTML, CSS, JavaScript (Frontend visualization)
-
-## Structure
-- dsa-java: Java implementation of Stack
-- frontend: Simple UI to simulate navigation
-
-## How to Run
-- Run the Java file using terminal or VS Code.
-- Open index.html in a browser to see the frontend demo.
+This repository is intended for students and beginners who want to understand how stack-based navigation works in real-world systems. It serves as a clear example of applying theoretical DSA concepts to practical problems and is suitable for academic submissions, demonstrations, and learning purposes.
