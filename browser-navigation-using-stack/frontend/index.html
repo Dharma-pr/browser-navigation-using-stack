@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Browser Navigation using Stack</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Browser Back & Forward Navigation</h1>
+
+<div class="app">
+
+  <div class="status-bar">
+    <div>
+      <strong>Current Page</strong>
+      <div id="current">home.com</div>
+    </div>
+
+    <div class="sizes">
+      <p>Back Stack Size: <span id="backSize">0</span></p>
+      <p>Forward Stack Size: <span id="forwardSize">0</span></p>
+    </div>
+
+    <div class="controls">
+      <button onclick="clearHistory()">Clear History</button>
+      <button onclick="stressTest()">Stress Test</button>
+    </div>
+  </div>
+  <div id="toast" class="toast"></div>
+  <div class="input-area">
+    <input type="text" id="url" placeholder="Enter new URL">
+    <button onclick="visitPage()">Visit</button>
+    <button onclick="goBack()">Back</button>
+    <button onclick="goForward()">Forward</button>
+  </div>
+  
+  <div class="stacks">
+    <div>
+      <h3>Back Stack</h3>
+      <ul id="backStackView"></ul>
+    </div>
+    <div>
+      <h3>Forward Stack</h3>
+      <ul id="forwardStackView"></ul>
+    </div>
+  </div>
+  <div class="log-panel">
+    <h3>Action Log</h3>
+    <ul id="log"></ul>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
